@@ -1,0 +1,160 @@
+/* Menu */
+.bg-dark {
+    background-color: #2b2c2d !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: whitesmoke !important;
+}
+
+.nav-container {
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.logo {
+    height: 40px;
+}
+
+@media screen and (max-width: 380px) {
+    .logo {
+        content: url("./assets/jjlogo.png")
+    }
+}
+
+.menu-center {
+    left: 50%;
+    right: auto;
+    text-align: center;
+    transform: translate(-50%, 0);
+    width: 20%;
+}
+
+@media screen and (max-width: 991px) {
+    .menu-center {
+        display: none !important;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none !important;
+        margin-top: 0;
+    }
+
+    .navbar-nav {
+        margin-left: 0 !important;
+        width: fit-content;
+    }
+
+    .nav-link {
+        padding: 4px !important;
+        margin: 2px !important;
+    }
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.row-2 {
+    margin: 120px 16px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+body {
+    background-color: #edeef0;
+}
+
+.col-extra {
+    padding: 8px;
+    margin: 0 20px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    height: fit-content;
+}
+
+.article {
+    background-color: white;
+    border-radius: 20px;
+    align-content: center;
+    max-width: 400px;
+    width: auto;
+    height: fit-content;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    text-align: center;
+}
+
+.navbar-collapse {
+    transition: transform 0.2s !important;
+}
+
+.article-image {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin: 8px;
+    text-align: left;
+    overflow-wrap: normal;
+}
+
+h5 {
+    overflow-wrap: normal;
+}
+
+.top-headlines {
+    text-align: left;
+}
+
+.headline {
+    text-align: left;
+    font-size: 14px;
+}
+
+.article-container {
+    flex-direction: column;
+}
+
+@media screen and (max-width: 780px) {
+    .col-extra {
+        display: none;
+    }
+}
+
+.nav-item:hover:not(.active) {
+    background-color: indianred;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: red;
+    border-radius: 10px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" />
+        <title>J-J Sports</title>
+    </head>
+
+    <body>
+        <div class="nav-container row-1">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="./assets/jjlogo1.png"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" onclick="toggleMenu()"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse ml-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item"><a href="./pages/about.html" class="nav-link">About The Team</a></li>
+                        <li class="nav-item"><a href="./pages/contact.html" class="nav-link">Contact Us</a></li>
+                        <li class="nav-item dropdown">
+                            <div class="dropdown-container">
+                                <a class="nav-link dropdown-toggle" href="./pages/nba.html" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    NBA
+                                </a>
+                                <div class="dropdown-menu menu-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Teams</a>
+                                    <a class="dropdown-item" href="#">Schedule</a>
+                                    <a class="dropdown-item" href="#">Stats</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="dropdown-container">
+                                <a class="nav-link dropdown-toggle" href="./pages/mma.html" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    MMA
+                                </a>
+                                <div class="dropdown-menu menu-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Teams</a>
+                                    <a class="dropdown-item" href="#">Schedule</a>
+                                    <a class="dropdown-item" href="#">Stats</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="dropdown-container">
+                                <a class="nav-link dropdown-toggle" href="./pages/nfl.html" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    NFL
+                                </a>
+                                <div class="dropdown-menu menu-center" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Teams</a>
+                                    <a class="dropdown-item" href="#">Schedule</a>
+                                    <a class="dropdown-item" href="#">Stats</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row-2">
+            <div class="article-container">
+                <div class="article">
+                    <a class="article-content">
+                        <img class="article-image" src="assets/nfl-refs.jpg">
+                        <h4 class="title">Referees Storm off the Field After Heated Conflict with The Texans Offense
+                        </h4>
+                        <p class="Summary">The officials for the game got into a dispute with the Texans Quarterback
+                            Dave Mills after an unsportsmanlike conduct, in which the rookie did his "new and
+                            special" dance move, lets just say it wasn't so special.</p>
+                        <p class="author"><small class="muted">J. Golden Ellis</small></p>
+                    </a>
+                </div>
+                <div class="article">
+                    <a class="article-content">
+                        <img class="article-image" src="assets/logan-vs-antonio.jpg">
+                        <h4 class="title">Antonio Brown vs Logan Paul, We all Know Who We Want to Win</h4>
+                        <p class="Summary">With the much anticipated fight on the line, bets started piling up in
+                            Antonio's favor especially with his recent charges for battery and burglary, we can only
+                            hope that Antonio will do the same to Logan.</p>
+                        <p class="author"><small class="muted">Jeremy Jackson</small></p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-extra">
+                <h5>Top Headlines</h5>
+                <ul class="top-headlines">
+                    <li>
+                        <a class="headline">BYU Football beats Oregon</a>
+                    </li>
+                    <li>
+                        <a class="headline">BYU Swim beats Oregon</a>
+                    </li>
+                    <li>
+                        <a class="headline">BYU Track beats Oregon</a>
+                    </li>
+                    <li>
+                        <a class="headline">BYU Womens Soccer beats Oregon</a>
+                    </li>
+                    <li>
+                        <a class="headline">BYU Rugby beats Oregon</a>
+                    </li>
+                    <li>
+                        <a class="headline">Oregon Ducks football association banned from PAC-12</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bottom justify-content-center">
+            <a class="navbar-brand" href="index.html"><p class="footer"><small class="muted footer">Brought to you by J. Ellis and Jeremy
+            Jackson</small></p></a>
+        </nav>
+        <script src="navbar-service.js"></script>
+    </body>
+
+</html>
