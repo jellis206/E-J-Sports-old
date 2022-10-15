@@ -24,6 +24,10 @@
     .logo {
         height: 40px;
     }
+
+    .games {
+        margin-top: 80px;
+    }
 }
 
 .menu-center {
@@ -159,6 +163,35 @@ h5 {
     border-radius: 10px;
 }
 
-#match {
-    margin-top: 60px;
+@media screen and (min-width: 780px) {
+    .games {
+        margin-top: 100px;
+    }
+}
+
+.games {
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.game {
+    background-color: white;
+    border: solid 2px #2b2c2d;
+    border-radius: 10px;
+    padding-inline: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p.date {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.game .teams {
+    flex-direction: row;
+    justify-content: space-between;
 }
