@@ -32,11 +32,13 @@ async function getAllGames() {
     for (let j = 0; j < allData.length; j++) {
         let json = allData[j];
         for (let i = 0; i < json.data.length; i++) {
-            results += "<div> <p>Home: " + json.data[i].home_team.full_name + "  Away: " + json.data[i].visitor_team.full_name + "</p>";
-            results += "<p> Score" + json.data[i].home_team_score + "  Away: " + json.data[i].visitor_team_score + "</p></div>";
+            date = new Date(json.data[i].date).toString().substring(0, 15);
+            results += "<div class=\"game\"> <p> Date: " + date + "</p>";
+            results += "<p>Home Team: " + json.data[i].home_team.full_name + "  Away Team: " + json.data[i].visitor_team.full_name + "</p>";
+            results += "<p> " + json.data[i].home_team_score + "  Away: " + json.data[i].visitor_team_score + "</p></div>";
         }
     }
-    document.getElementById("Match").innerHTML = results;
+    document.getElementById("match").innerHTML = results;
 
 }
 getAllGames();

@@ -17,12 +17,12 @@
 }
 
 .logo {
-    height: 40px;
+    height: 60px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 780px) {
     .logo {
-        content: url("./assets/jjlogo.png")
+        height: 40px;
     }
 }
 
@@ -157,4 +157,8 @@ h5 {
 .active {
     background-color: red;
     border-radius: 10px;
+}
+
+#match {
+    margin-top: 60px;
 }
