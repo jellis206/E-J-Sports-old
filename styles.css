@@ -183,15 +183,32 @@ h5 {
     padding-inline: 4px;
     margin-bottom: 10px;
     text-align: center;
+    flex-grow: 2;
 }
 
-p.date {
+p.date,
+p.score {
     margin: 0;
     width: 100%;
     text-align: center;
 }
 
 .game .teams {
-    flex-direction: row;
-    justify-content: space-between;
+    display: inline-block;
+    width: 100%;
+}
+
+.game .teams .home {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 8px;
+}
+
+.game .teams .away {
+    width: 50%;
+    height: auto;
+    float: right;
+    border-left: solid 4px black;
+    padding: 8px;
 }

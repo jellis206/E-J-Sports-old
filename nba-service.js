@@ -15,14 +15,14 @@ let url = "https://www.balldontlie.io/api/v1/games";
 
 
 async function getAllGames() {
-    let pages = [...Array(20).keys()];
+    let pages = [...Array(5).keys()];
     let allData = [];
 
     await Promise.all(
         pages.map(async p => {
             var url = new URL("https://www.balldontlie.io/api/v1/games");
             url.searchParams.append("page", p);
-            url.searchParams.append("per_page", 50);
+            url.searchParams.append("per_page", 100);
             const res = await fetch(url).then(data => { return data.json(); });
             allData.push(res);
         })
@@ -34,8 +34,8 @@ async function getAllGames() {
         for (let i = 0; i < json.data.length; i++) {
             date = new Date(json.data[i].date).toString().substring(0, 15);
             results += "<div class=\'game\'> <p class=\'date\'> Date: " + date + "</p>";
-            results += "<div class=\'teams\'><div class=\'home\'>Home Team: " + json.data[i].home_team.full_name + "</div> <div class=\'away\'>Away Team: " + json.data[i].visitor_team.full_name + "</div></div>";
-            results += "<div class=\'score\'>" + json.data[i].home_team_score + " to " + json.data[i].visitor_team_score + "</div></div>";
+            results += "<div class=\'teams\'><div class=\'home\'>Home: " + json.data[i].home_team.full_name + "</div> <div class=\'away\'>Away: " + json.data[i].visitor_team.full_name + "</div></div>";
+            results += "<p class=\'score\'>Score: " + json.data[i].home_team_score + " to " + json.data[i].visitor_team_score + "</p></div>";
         }
     }
     document.getElementById("match").innerHTML = results;
