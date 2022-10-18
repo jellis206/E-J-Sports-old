@@ -21,7 +21,7 @@ async function getAllGames() {
     await Promise.all(
         pages.map(async p => {
             var url = new URL("https://www.balldontlie.io/api/v1/games");
-            url.searchParams.append("page", p);
+            url.searchParams.append("page", p + 1);
             url.searchParams.append("per_page", 100);
             const res = await fetch(url).then(data => { return data.json(); });
             allData.push(res);
